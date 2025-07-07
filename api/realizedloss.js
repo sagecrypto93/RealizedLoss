@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const token = "0d866412-d29c-41ed-a044-7be4fb52478a"; 
   const endpoint = `https://api.researchbitcoin.net/v1/realizedloss/realized_loss?token=${token}&date_field=2011-01-01&output_format=json`;
-  // Change title to CATEGORY name
+  // Change title to CATEGORY name (in all lowercase)
   //Change NAME to CATEGORY name and 2NDNAME to data_field name
 
   try {

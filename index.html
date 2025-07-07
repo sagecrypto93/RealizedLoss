@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OCM MVRV</title> 
+  <title>OCM Realized Loss</title> 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body style="margin:0; background-color:#18181D; color:white; font-family:Inter, sans-serif;">
   <div id="chart" style="width:100%; max-width:900px; height:500px; margin:auto;"></div>
 
   <script>
-    const field = "mvrv";  // <-- Must match the data_field !!!
+    const field = "realized_loss";  // Change to data_field
 
-    fetch("/api/market_value_to_realized_value.js") // <-- Must match the API FILE NAME !!!
+    fetch("/api/realizedloss.js") // Change to API file name, e.g. CATEGORY.js
       .then(res => res.json())
       .then(result => {
         const data = result.data; // Your API returns { data: [...] }
